@@ -12,9 +12,9 @@ namespace Entidades
         public int ID_Cliente { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public String Direccion { get; set; }
-        public String Telefono { get; set; }
-        public String Documento { get; set; }
-        public String Estado { get; set; }
+        public string Direccion { get; set; }
+        public string Telefono { get; set; }
+        public string Documento { get; set; }
+        public string Estado { get; set; }
     }
 }

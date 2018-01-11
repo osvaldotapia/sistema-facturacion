@@ -195,8 +195,8 @@ namespace Facturacion
 
                 FrmFacturar llamar = null;
                 string u = toolStripStatusLabel1.Text;
-                llamar = FrmFacturar.Instance();
-                llamar = new FrmFacturar(u);
+                llamar = FrmFacturar.Instance(u);
+                //llamar = new FrmFacturar(u);
                 llamar.MdiParent = this;
                 llamar.Show();
             }
@@ -204,8 +204,8 @@ namespace Facturacion
             {
                 FrmInventario llamar = null;
 
-                llamar = FrmInventario.Instance();
-                llamar = new FrmInventario(usu);
+                llamar = FrmInventario.Instance(usu);
+                //llamar = new FrmInventario(usu);
                 llamar.MdiParent = this;
                 llamar.Show();
             }

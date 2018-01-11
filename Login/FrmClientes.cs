@@ -159,8 +159,9 @@ namespace Facturacion
             }
             catch (Exception)
             {
+                MessageBox.Show("Esta cedula ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                throw;
+                
             }
         }
         private void txtBusqueda_TextChanged(object sender, EventArgs e)

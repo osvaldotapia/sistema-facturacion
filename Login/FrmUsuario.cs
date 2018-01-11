@@ -287,6 +287,11 @@ namespace Facturacion
             CbxPrivilegio.DataSource = Usub.ObtenerNivelUsuario();
             CbxPrivilegio.DisplayMember = "Descripcion";
         }
+
+        private void CbxPrivilegio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
        
     
     }

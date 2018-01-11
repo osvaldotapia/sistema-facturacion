@@ -203,6 +203,7 @@
             this.CbxPrivilegio.Size = new System.Drawing.Size(121, 23);
             this.CbxPrivilegio.TabIndex = 37;
             this.CbxPrivilegio.DropDown += new System.EventHandler(this.CbxPrivilegio_DropDown);
+            this.CbxPrivilegio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CbxPrivilegio_KeyPress);
             // 
             // pictureBox1
             // 

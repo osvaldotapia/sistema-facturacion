@@ -11,32 +11,32 @@ namespace Datos
 {
     public class FormaPagoDal
     {
-          #region "Variables (Clases) de conexión"
-        //private SqlCommand ComandoSQL;
-        private SqlDataAdapter AdaptadorSQL;
-        private DataTable Dt;
-        #endregion
+              #region "Variables (Clases) de conexión"
+            //private SqlCommand ComandoSQL;
+            private SqlDataAdapter AdaptadorSQL;
+            private DataTable Dt;
+            #endregion
 
-        //Clase de Acceso a los datos
-        private Acceso AccesoDatos;
+            //Clase de Acceso a los datos
+            private Acceso AccesoDatos;
 
-        // Constructor
-        public FormaPagoDal()
-        {
-            AccesoDatos = new Acceso();
-        }
-        public DataTable ObtenerFormaPago()
-        {
-            string query = "Select * From FormaPago";
-            using (AdaptadorSQL = new SqlDataAdapter(query, AccesoDatos.ObtenerConexion()))
+            // Constructor
+            public FormaPagoDal()
             {
-                Dt = new DataTable();
-
-                AdaptadorSQL.Fill(Dt);
-
+                AccesoDatos = new Acceso();
             }
-            return Dt;
+            public DataTable ObtenerFormaPago()
+            {
+                string query = "Select * From FormaPago";
+                using (AdaptadorSQL = new SqlDataAdapter(query, AccesoDatos.ObtenerConexion()))
+                {
+                    Dt = new DataTable();
+
+                    AdaptadorSQL.Fill(Dt);
+
+                }
+                return Dt;
            
-        } 
+            } 
     }
 }

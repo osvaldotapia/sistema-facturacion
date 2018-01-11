@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Facturacion.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Facturacion.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Facturacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -161,7 +161,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FMGtRHtNsxPCZTO+a6NB6C3X1oASutIGvrS9wA7EAUQ=</dsig:DigestValue>
+        <dsig:DigestValue>khTlkxxuTYEXEvccHBrJAWafy73H2vMb149AkzdfhOs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -173,19 +173,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eA6GFMQXHHvEXYrehdJNmoC42FisXXom2IJh9gkVnoI=</dsig:DigestValue>
+        <dsig:DigestValue>F6fiHa61SdkRet6OiV5lmQPrTP0T6RBb4PmWcNGPr0g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facturacion.exe" size="3913216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facturacion.exe" size="3913728">
       <assemblyIdentity name="Facturacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RFRayToaRyWaibgrzeEAa9nuI8jz/tuB9InyaWuiuSs=</dsig:DigestValue>
+        <dsig:DigestValue>s8aocNWS8buObOt5nU58WLEKTMY2lz7XtvY7gPMBQgU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -197,7 +197,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KEslP51oERuVKovSqjZFV0AHkqAtuleQmxZ6w5Rh1nk=</dsig:DigestValue>
+        <dsig:DigestValue>vCwK1A7BoHFs0nAfk0FTzv43aIBotBpj/ur6VDdFgUM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

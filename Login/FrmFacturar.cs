@@ -26,7 +26,7 @@ namespace Facturacion
         string Usu = "";
         private static FrmFacturar frmInstance = null;
 
-        public static FrmFacturar Instance()
+        public static FrmFacturar Instance(string usuario)
         {
             if (((frmInstance == null)
                         || (frmInstance.IsDisposed == true)))
@@ -34,19 +34,13 @@ namespace Facturacion
                 frmInstance = new FrmFacturar();
             }
             frmInstance.BringToFront();
+            frmInstance.Usu = usuario;
             return frmInstance;
         }
         public FrmFacturar()
         {
             InitializeComponent();
         }
-        public FrmFacturar(string usu)
-        {
-            InitializeComponent();
-            this.Usu = usu;
-
-        }
-
         private void FrmFacturar_Load(object sender, EventArgs e)
         {
             DoubleBuffered = true;
@@ -90,7 +84,7 @@ namespace Facturacion
             if (TxtCantidad.Text == "")
             {
                 LbcCantidad.Visible = false;
-                LblTotal.Text ="0.00";
+                LblTotal.Text = "0.00";
                 //LblTotaApagar.Text = "0.00";
                 return;
             }
@@ -284,7 +278,7 @@ namespace Facturacion
             //        double t = can + it;
             //        LblTotaApagar.Text = t.ToString();
             //    }
-            //    if (this.dgvDetalleF.RowCount > 1)
+            //    if (this.dgvDetalleF.RowCount >   )
             //    {
 
             //        double can = 0.00;
