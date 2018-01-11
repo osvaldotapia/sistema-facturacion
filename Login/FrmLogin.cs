@@ -98,19 +98,19 @@ namespace Facturacion
 
         private void CbxUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
-            try
-            {
-                if (e.KeyChar == '\r')
+                try
                 {
-                    e.Handled = true;
-                    TxtClave.Focus();
+                    if (e.KeyChar == '\r')
+                    {
+                        e.Handled = true;
+                        TxtClave.Focus();
+                    }
                 }
-            }
-            catch (Exception)
-            {
+                catch (Exception)
+                {
 
-                throw;
-            }
+                    throw;
+                }
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -17,12 +17,13 @@ namespace Facturacion
         string usu="";
         private static FrmInventario frmInstance = null;
 
-        public static FrmInventario Instance()
+        public static FrmInventario Instance(string usuario)
         {
             if (((frmInstance == null)
                         || (frmInstance.IsDisposed == true)))
             {
                 frmInstance = new FrmInventario();
+                frmInstance.usu = usuario;
             }
             frmInstance.BringToFront();
             return frmInstance;
@@ -31,12 +32,6 @@ namespace Facturacion
         {
             InitializeComponent();
         }
-        public FrmInventario(string u)
-            :this()
-        {
-            this.usu = u;
-        }
-
         private void FrmInventario_Load(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = DateTime.Now.ToLongDateString();
