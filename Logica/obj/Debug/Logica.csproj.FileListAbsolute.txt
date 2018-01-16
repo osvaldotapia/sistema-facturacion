@@ -7,3 +7,12 @@ C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Logica\bin\De
 C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
 C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Logica\obj\Debug\Logica.dll
 C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Logica\obj\Debug\Logica.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\bin\Debug\Logica.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\bin\Debug\Logica.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\bin\Debug\Datos.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\bin\Debug\Entidades.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\bin\Debug\Datos.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\bin\Debug\Entidades.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\obj\Debug\Logica.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Logica\obj\Debug\Logica.pdb

@@ -91,22 +91,22 @@
             // LblClave
             // 
             this.LblClave.AutoSize = true;
-            this.LblClave.Font = new System.Drawing.Font("Segoe Marker", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblClave.ForeColor = System.Drawing.Color.White;
             this.LblClave.Location = new System.Drawing.Point(6, 87);
             this.LblClave.Name = "LblClave";
-            this.LblClave.Size = new System.Drawing.Size(36, 15);
+            this.LblClave.Size = new System.Drawing.Size(48, 16);
             this.LblClave.TabIndex = 1;
             this.LblClave.Text = "Clave";
             // 
             // LblUsuario
             // 
             this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Font = new System.Drawing.Font("Segoe Marker", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUsuario.ForeColor = System.Drawing.Color.White;
             this.LblUsuario.Location = new System.Drawing.Point(6, 34);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(50, 15);
+            this.LblUsuario.Size = new System.Drawing.Size(62, 16);
             this.LblUsuario.TabIndex = 0;
             this.LblUsuario.Text = "Usuario";
             // 
@@ -170,9 +170,9 @@
             this.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnCancelar.Location = new System.Drawing.Point(253, 226);
+            this.BtnCancelar.Location = new System.Drawing.Point(256, 219);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(92, 37);
+            this.BtnCancelar.Size = new System.Drawing.Size(70, 70);
             this.BtnCancelar.TabIndex = 0;
             this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
@@ -187,9 +187,9 @@
             this.BtnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.BtnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnAceptar.Location = new System.Drawing.Point(127, 226);
+            this.BtnAceptar.Location = new System.Drawing.Point(164, 219);
             this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(91, 37);
+            this.BtnAceptar.Size = new System.Drawing.Size(70, 70);
             this.BtnAceptar.TabIndex = 1;
             this.BtnAceptar.UseVisualStyleBackColor = true;
             this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
@@ -199,7 +199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(476, 271);
+            this.ClientSize = new System.Drawing.Size(476, 297);
             this.Controls.Add(this.LblMinimixar);
             this.Controls.Add(this.LblCerrar);
             this.Controls.Add(this.BtnCancelar);

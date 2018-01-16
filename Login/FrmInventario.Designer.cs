@@ -59,6 +59,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cbxProveedor = new System.Windows.Forms.ComboBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.StBar.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
@@ -77,9 +79,10 @@
             this.StBar.Location = new System.Drawing.Point(0, 37);
             this.StBar.Name = "StBar";
             this.StBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StBar.Size = new System.Drawing.Size(1137, 24);
+            this.StBar.Size = new System.Drawing.Size(975, 24);
             this.StBar.TabIndex = 22;
             this.StBar.Text = "statusStrip1";
+            this.StBar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.StBar_ItemClicked);
             // 
             // toolStripStatusLabel1
             // 
@@ -130,9 +133,10 @@
             this.tsImprimir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1137, 37);
+            this.toolStrip1.Size = new System.Drawing.Size(975, 37);
             this.toolStrip1.TabIndex = 21;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // ToolstNuevo
             // 
@@ -221,10 +225,11 @@
             // 
             // dgvInventario
             // 
+            this.dgvInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventario.Location = new System.Drawing.Point(12, 188);
+            this.dgvInventario.Location = new System.Drawing.Point(0, 175);
             this.dgvInventario.Name = "dgvInventario";
-            this.dgvInventario.Size = new System.Drawing.Size(1113, 401);
+            this.dgvInventario.Size = new System.Drawing.Size(975, 401);
             this.dgvInventario.TabIndex = 25;
             // 
             // label1
@@ -321,7 +326,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(627, 110);
+            this.label5.Location = new System.Drawing.Point(603, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 19);
             this.label5.TabIndex = 35;
@@ -331,7 +336,7 @@
             // 
             this.cbxProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxProveedor.FormattingEnabled = true;
-            this.cbxProveedor.Location = new System.Drawing.Point(631, 148);
+            this.cbxProveedor.Location = new System.Drawing.Point(607, 148);
             this.cbxProveedor.Name = "cbxProveedor";
             this.cbxProveedor.Size = new System.Drawing.Size(121, 21);
             this.cbxProveedor.TabIndex = 36;
@@ -341,19 +346,49 @@
             // 
             this.BtnBuscar.BackgroundImage = global::Facturacion.Properties.Resources.busqueda;
             this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnBuscar.Location = new System.Drawing.Point(781, 145);
+            this.BtnBuscar.Location = new System.Drawing.Point(757, 145);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(43, 27);
             this.BtnBuscar.TabIndex = 37;
             this.BtnBuscar.UseVisualStyleBackColor = true;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(907, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 25);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "-";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(938, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(25, 25);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "X";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1137, 601);
+            this.ClientSize = new System.Drawing.Size(975, 601);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.cbxProveedor);
             this.Controls.Add(this.label5);
@@ -417,5 +452,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbxProveedor;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

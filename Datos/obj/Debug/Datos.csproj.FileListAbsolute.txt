@@ -5,3 +5,10 @@ C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Datos\bin\Deb
 C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Datos\obj\Debug\Datos.dll
 C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Datos\obj\Debug\Datos.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\bin\Debug\Datos.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\bin\Debug\Datos.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\bin\Debug\Entidades.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\bin\Debug\Entidades.pdb
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\obj\Debug\Datos.dll
+C:\Users\osval\OneDrive\Documentos\Visual Studio 2017\Projects\sistema tienda\Datos\obj\Debug\Datos.pdb

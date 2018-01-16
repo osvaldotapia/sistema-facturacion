@@ -38,6 +38,7 @@
             this.Toolstborrar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsImprimir = new System.Windows.Forms.ToolStripButton();
+            this.tsbConfi = new System.Windows.Forms.ToolStripButton();
             this.LblMinimixar = new System.Windows.Forms.Label();
             this.LblCerrar = new System.Windows.Forms.Label();
             this.StBar = new System.Windows.Forms.StatusStrip();
@@ -75,7 +76,6 @@
             this.Precio_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Generales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tsbConfi = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.StBar.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,7 +101,7 @@
             this.tsbConfi});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1083, 37);
+            this.toolStrip1.Size = new System.Drawing.Size(975, 37);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -159,32 +159,42 @@
             this.tsImprimir.Text = "Imprimir";
             this.tsImprimir.Click += new System.EventHandler(this.tsImprimir_Click);
             // 
+            // tsbConfi
+            // 
+            this.tsbConfi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbConfi.Image = ((System.Drawing.Image)(resources.GetObject("tsbConfi.Image")));
+            this.tsbConfi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbConfi.Name = "tsbConfi";
+            this.tsbConfi.Size = new System.Drawing.Size(34, 34);
+            this.tsbConfi.Text = "Configurar";
+            this.tsbConfi.Click += new System.EventHandler(this.tsbConfi_Click);
+            // 
             // LblMinimixar
             // 
-            this.LblMinimixar.AutoSize = true;
             this.LblMinimixar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LblMinimixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblMinimixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinimixar.ForeColor = System.Drawing.Color.White;
-            this.LblMinimixar.Location = new System.Drawing.Point(1031, 6);
+            this.LblMinimixar.Location = new System.Drawing.Point(911, 7);
             this.LblMinimixar.Name = "LblMinimixar";
-            this.LblMinimixar.Size = new System.Drawing.Size(19, 25);
+            this.LblMinimixar.Size = new System.Drawing.Size(25, 25);
             this.LblMinimixar.TabIndex = 19;
             this.LblMinimixar.Text = "-";
+            this.LblMinimixar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblMinimixar.Click += new System.EventHandler(this.LblMinimixar_Click);
             // 
             // LblCerrar
             // 
-            this.LblCerrar.AutoSize = true;
             this.LblCerrar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCerrar.ForeColor = System.Drawing.Color.White;
-            this.LblCerrar.Location = new System.Drawing.Point(1052, 9);
+            this.LblCerrar.Location = new System.Drawing.Point(942, 7);
             this.LblCerrar.Name = "LblCerrar";
-            this.LblCerrar.Size = new System.Drawing.Size(20, 20);
+            this.LblCerrar.Size = new System.Drawing.Size(25, 25);
             this.LblCerrar.TabIndex = 18;
             this.LblCerrar.Text = "X";
+            this.LblCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCerrar.Click += new System.EventHandler(this.LblCerrar_Click);
             // 
             // StBar
@@ -200,7 +210,7 @@
             this.StBar.Location = new System.Drawing.Point(0, 37);
             this.StBar.Name = "StBar";
             this.StBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StBar.Size = new System.Drawing.Size(1083, 24);
+            this.StBar.Size = new System.Drawing.Size(975, 24);
             this.StBar.TabIndex = 20;
             this.StBar.Text = "statusStrip1";
             // 
@@ -248,9 +258,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.TxtCliente);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(22, 80);
+            this.groupBox1.Location = new System.Drawing.Point(3, 80);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 65);
+            this.groupBox1.Size = new System.Drawing.Size(474, 65);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             // 
@@ -314,9 +324,9 @@
             this.groupBox2.Controls.Add(this.Cantidad);
             this.groupBox2.Controls.Add(this.TxtProducto);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(565, 80);
+            this.groupBox2.Location = new System.Drawing.Point(481, 80);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(495, 65);
+            this.groupBox2.Size = new System.Drawing.Size(494, 65);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -384,7 +394,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(555, 180);
+            this.label5.Location = new System.Drawing.Point(150, 201);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 20);
             this.label5.TabIndex = 25;
@@ -395,7 +405,7 @@
             this.LblPrecio.AutoSize = true;
             this.LblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPrecio.ForeColor = System.Drawing.Color.Lime;
-            this.LblPrecio.Location = new System.Drawing.Point(614, 180);
+            this.LblPrecio.Location = new System.Drawing.Point(209, 201);
             this.LblPrecio.Name = "LblPrecio";
             this.LblPrecio.Size = new System.Drawing.Size(83, 20);
             this.LblPrecio.TabIndex = 26;
@@ -405,7 +415,7 @@
             // 
             this.BtnQuitar.BackgroundImage = global::Facturacion.Properties.Resources.quitar;
             this.BtnQuitar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnQuitar.Location = new System.Drawing.Point(958, 164);
+            this.BtnQuitar.Location = new System.Drawing.Point(553, 185);
             this.BtnQuitar.Name = "BtnQuitar";
             this.BtnQuitar.Size = new System.Drawing.Size(78, 54);
             this.BtnQuitar.TabIndex = 28;
@@ -416,7 +426,7 @@
             // 
             this.BtnAgregar.BackgroundImage = global::Facturacion.Properties.Resources.agregar;
             this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAgregar.Location = new System.Drawing.Point(858, 164);
+            this.BtnAgregar.Location = new System.Drawing.Point(453, 185);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(80, 54);
             this.BtnAgregar.TabIndex = 27;
@@ -428,7 +438,7 @@
             this.LblTotal.AutoSize = true;
             this.LblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTotal.ForeColor = System.Drawing.Color.Lime;
-            this.LblTotal.Location = new System.Drawing.Point(769, 180);
+            this.LblTotal.Location = new System.Drawing.Point(364, 201);
             this.LblTotal.Name = "LblTotal";
             this.LblTotal.Size = new System.Drawing.Size(83, 20);
             this.LblTotal.TabIndex = 30;
@@ -439,7 +449,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(715, 180);
+            this.label6.Location = new System.Drawing.Point(310, 201);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 20);
             this.label6.TabIndex = 29;
@@ -454,7 +464,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(769, 481);
+            this.label3.Location = new System.Drawing.Point(718, 482);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 20);
             this.label3.TabIndex = 31;
@@ -465,7 +475,7 @@
             this.LblTotaApagar.AutoSize = true;
             this.LblTotaApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTotaApagar.ForeColor = System.Drawing.Color.Lime;
-            this.LblTotaApagar.Location = new System.Drawing.Point(900, 481);
+            this.LblTotaApagar.Location = new System.Drawing.Point(849, 482);
             this.LblTotaApagar.Name = "LblTotaApagar";
             this.LblTotaApagar.Size = new System.Drawing.Size(0, 20);
             this.LblTotaApagar.TabIndex = 32;
@@ -474,6 +484,7 @@
             // 
             this.dgvDetalleF.AllowUserToAddRows = false;
             this.dgvDetalleF.AllowUserToResizeRows = false;
+            this.dgvDetalleF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetalleF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Descripcion_Producto,
@@ -482,11 +493,11 @@
             this.Precio_Producto,
             this.Generales,
             this.IDProducto});
-            this.dgvDetalleF.Location = new System.Drawing.Point(22, 265);
+            this.dgvDetalleF.Location = new System.Drawing.Point(0, 265);
             this.dgvDetalleF.Name = "dgvDetalleF";
             this.dgvDetalleF.ReadOnly = true;
             this.dgvDetalleF.RowHeadersVisible = false;
-            this.dgvDetalleF.Size = new System.Drawing.Size(1038, 188);
+            this.dgvDetalleF.Size = new System.Drawing.Size(975, 188);
             this.dgvDetalleF.TabIndex = 33;
             this.dgvDetalleF.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalleF_CellContentClick);
             this.dgvDetalleF.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalleF_CellContentDoubleClick);
@@ -497,7 +508,6 @@
             this.Descripcion_Producto.HeaderText = "Concepto";
             this.Descripcion_Producto.Name = "Descripcion_Producto";
             this.Descripcion_Producto.ReadOnly = true;
-            this.Descripcion_Producto.Width = 300;
             // 
             // Fecha
             // 
@@ -510,21 +520,18 @@
             this.Cantidad_Producto.HeaderText = "Precio";
             this.Cantidad_Producto.Name = "Cantidad_Producto";
             this.Cantidad_Producto.ReadOnly = true;
-            this.Cantidad_Producto.Width = 150;
             // 
             // Precio_Producto
             // 
             this.Precio_Producto.HeaderText = "Generales";
             this.Precio_Producto.Name = "Precio_Producto";
             this.Precio_Producto.ReadOnly = true;
-            this.Precio_Producto.Width = 150;
             // 
             // Generales
             // 
             this.Generales.HeaderText = "Itbis";
             this.Generales.Name = "Generales";
             this.Generales.ReadOnly = true;
-            this.Generales.Width = 200;
             // 
             // IDProducto
             // 
@@ -533,22 +540,12 @@
             this.IDProducto.ReadOnly = true;
             this.IDProducto.Visible = false;
             // 
-            // tsbConfi
-            // 
-            this.tsbConfi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbConfi.Image = ((System.Drawing.Image)(resources.GetObject("tsbConfi.Image")));
-            this.tsbConfi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbConfi.Name = "tsbConfi";
-            this.tsbConfi.Size = new System.Drawing.Size(34, 34);
-            this.tsbConfi.Text = "Configurar";
-            this.tsbConfi.Click += new System.EventHandler(this.tsbConfi_Click);
-            // 
             // FrmFacturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1083, 527);
+            this.ClientSize = new System.Drawing.Size(975, 527);
             this.Controls.Add(this.dgvDetalleF);
             this.Controls.Add(this.LblTotaApagar);
             this.Controls.Add(this.label3);

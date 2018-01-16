@@ -62,11 +62,12 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(629, 29);
+            this.panel1.Size = new System.Drawing.Size(629, 0);
             this.panel1.TabIndex = 22;
             // 
             // groupBox3

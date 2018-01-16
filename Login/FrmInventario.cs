@@ -107,5 +107,25 @@ namespace Facturacion
             cbxProveedor.DataSource = pro.verProveedor();
             cbxProveedor.DisplayMember = "Nombre_Compañia";
         }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void StBar_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

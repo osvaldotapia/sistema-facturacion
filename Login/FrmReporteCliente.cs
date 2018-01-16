@@ -21,7 +21,7 @@ namespace Facturacion
         private void FrmClienteReporte_Load(object sender, EventArgs e)
         {
             ReportDocument rep = new ReportDocument();
-            rep.Load(@"C:\Users\djgre\documents\visual studio 2013\Projects\SistemaTienda\Login\ReporteCliente.rpt");
+            rep.Load(@"E:\sistema tienda\Login\ReporteCliente.rpt");
             crystalReportViewer1.ReportSource=rep;
             crystalReportViewer1.Refresh();
 

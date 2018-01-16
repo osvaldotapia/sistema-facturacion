@@ -241,7 +241,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 16);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Direccion";
+            this.label5.Text = "Dirección";
             // 
             // label4
             // 
@@ -263,7 +263,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 16);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Telefono";
+            this.label3.Text = "Teléfono";
             // 
             // label2
             // 
@@ -274,7 +274,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Copañia";
+            this.label2.Text = "Copañía";
             // 
             // tabPage2
             // 
@@ -348,10 +348,10 @@
             this.rbNombre_Compañia.Checked = true;
             this.rbNombre_Compañia.Location = new System.Drawing.Point(6, 19);
             this.rbNombre_Compañia.Name = "rbNombre_Compañia";
-            this.rbNombre_Compañia.Size = new System.Drawing.Size(72, 17);
+            this.rbNombre_Compañia.Size = new System.Drawing.Size(74, 17);
             this.rbNombre_Compañia.TabIndex = 2;
             this.rbNombre_Compañia.TabStop = true;
-            this.rbNombre_Compañia.Text = "Compañia";
+            this.rbNombre_Compañia.Text = "Compañía";
             this.rbNombre_Compañia.UseVisualStyleBackColor = true;
             // 
             // dgvProveedor
