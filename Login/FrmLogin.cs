@@ -135,7 +135,7 @@ namespace Facturacion
 
         private void TxtClave_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
     }

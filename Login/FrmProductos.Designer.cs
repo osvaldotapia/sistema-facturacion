@@ -229,28 +229,28 @@
             // 
             this.TxtPVenta.Location = new System.Drawing.Point(24, 180);
             this.TxtPVenta.Name = "TxtPVenta";
-            this.TxtPVenta.Size = new System.Drawing.Size(67, 21);
+            this.TxtPVenta.Size = new System.Drawing.Size(121, 21);
             this.TxtPVenta.TabIndex = 2;
             // 
             // TxtInventario
             // 
             this.TxtInventario.Location = new System.Drawing.Point(211, 80);
             this.TxtInventario.Name = "TxtInventario";
-            this.TxtInventario.Size = new System.Drawing.Size(84, 21);
+            this.TxtInventario.Size = new System.Drawing.Size(121, 21);
             this.TxtInventario.TabIndex = 4;
             // 
             // TxtPCompra
             // 
             this.TxtPCompra.Location = new System.Drawing.Point(24, 128);
             this.TxtPCompra.Name = "TxtPCompra";
-            this.TxtPCompra.Size = new System.Drawing.Size(67, 21);
+            this.TxtPCompra.Size = new System.Drawing.Size(121, 21);
             this.TxtPCompra.TabIndex = 1;
             // 
             // TxtDescPro
             // 
             this.TxtDescPro.Location = new System.Drawing.Point(24, 80);
             this.TxtDescPro.Name = "TxtDescPro";
-            this.TxtDescPro.Size = new System.Drawing.Size(141, 21);
+            this.TxtDescPro.Size = new System.Drawing.Size(121, 21);
             this.TxtDescPro.TabIndex = 0;
             // 
             // label6
@@ -282,9 +282,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(21, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 16);
+            this.label3.Size = new System.Drawing.Size(133, 16);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Precio de compra";
+            this.label3.Text = "Precio de Compra";
             // 
             // label2
             // 
@@ -377,6 +377,7 @@
             // 
             // dgvProductos
             // 
+            this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -413,28 +414,28 @@
             // 
             // LblMinimixar
             // 
-            this.LblMinimixar.AutoSize = true;
             this.LblMinimixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblMinimixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinimixar.ForeColor = System.Drawing.Color.White;
-            this.LblMinimixar.Location = new System.Drawing.Point(746, 6);
+            this.LblMinimixar.Location = new System.Drawing.Point(732, 6);
             this.LblMinimixar.Name = "LblMinimixar";
-            this.LblMinimixar.Size = new System.Drawing.Size(19, 25);
+            this.LblMinimixar.Size = new System.Drawing.Size(25, 25);
             this.LblMinimixar.TabIndex = 15;
             this.LblMinimixar.Text = "-";
+            this.LblMinimixar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblMinimixar.Click += new System.EventHandler(this.LblMinimixar_Click);
             // 
             // LblCerrar
             // 
-            this.LblCerrar.AutoSize = true;
             this.LblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCerrar.ForeColor = System.Drawing.Color.White;
-            this.LblCerrar.Location = new System.Drawing.Point(767, 9);
+            this.LblCerrar.Location = new System.Drawing.Point(762, 6);
             this.LblCerrar.Name = "LblCerrar";
-            this.LblCerrar.Size = new System.Drawing.Size(20, 20);
+            this.LblCerrar.Size = new System.Drawing.Size(25, 25);
             this.LblCerrar.TabIndex = 14;
             this.LblCerrar.Text = "X";
+            this.LblCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCerrar.Click += new System.EventHandler(this.LblCerrar_Click);
             // 
             // errorProvider1

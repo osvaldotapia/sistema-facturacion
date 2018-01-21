@@ -356,11 +356,12 @@
             // 
             // dgvProveedor
             // 
+            this.dgvProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProveedor.Location = new System.Drawing.Point(8, 146);
             this.dgvProveedor.Name = "dgvProveedor";
             this.dgvProveedor.RowHeadersVisible = false;
-            this.dgvProveedor.Size = new System.Drawing.Size(868, 187);
+            this.dgvProveedor.Size = new System.Drawing.Size(868, 201);
             this.dgvProveedor.TabIndex = 3;
             this.dgvProveedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedor_CellClick);
             // 
@@ -375,30 +376,30 @@
             // 
             // LblMinimixar
             // 
-            this.LblMinimixar.AutoSize = true;
             this.LblMinimixar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LblMinimixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblMinimixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinimixar.ForeColor = System.Drawing.Color.White;
-            this.LblMinimixar.Location = new System.Drawing.Point(841, 6);
+            this.LblMinimixar.Location = new System.Drawing.Point(831, 7);
             this.LblMinimixar.Name = "LblMinimixar";
-            this.LblMinimixar.Size = new System.Drawing.Size(19, 25);
+            this.LblMinimixar.Size = new System.Drawing.Size(25, 25);
             this.LblMinimixar.TabIndex = 17;
             this.LblMinimixar.Text = "-";
+            this.LblMinimixar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblMinimixar.Click += new System.EventHandler(this.LblMinimixar_Click);
             // 
             // LblCerrar
             // 
-            this.LblCerrar.AutoSize = true;
             this.LblCerrar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCerrar.ForeColor = System.Drawing.Color.White;
-            this.LblCerrar.Location = new System.Drawing.Point(862, 9);
+            this.LblCerrar.Location = new System.Drawing.Point(862, 7);
             this.LblCerrar.Name = "LblCerrar";
-            this.LblCerrar.Size = new System.Drawing.Size(20, 20);
+            this.LblCerrar.Size = new System.Drawing.Size(25, 25);
             this.LblCerrar.TabIndex = 16;
             this.LblCerrar.Text = "X";
+            this.LblCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCerrar.Click += new System.EventHandler(this.LblCerrar_Click);
             // 
             // FrmProveedores

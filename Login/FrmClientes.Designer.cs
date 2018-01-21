@@ -42,7 +42,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.TxtTelefono = new System.Windows.Forms.TextBox();
+            this.TxtTelefono1 = new System.Windows.Forms.TextBox();
             this.TxtDireccion = new System.Windows.Forms.TextBox();
             this.TxtDocumento = new System.Windows.Forms.TextBox();
             this.TxtApellido = new System.Windows.Forms.TextBox();
@@ -61,6 +61,7 @@
             this.rbNombre = new System.Windows.Forms.RadioButton();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.TxtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -133,28 +134,28 @@
             // 
             // LblMinimixar
             // 
-            this.LblMinimixar.AutoSize = true;
             this.LblMinimixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblMinimixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinimixar.ForeColor = System.Drawing.Color.White;
-            this.LblMinimixar.Location = new System.Drawing.Point(758, 8);
+            this.LblMinimixar.Location = new System.Drawing.Point(746, 8);
             this.LblMinimixar.Name = "LblMinimixar";
-            this.LblMinimixar.Size = new System.Drawing.Size(19, 25);
+            this.LblMinimixar.Size = new System.Drawing.Size(25, 25);
             this.LblMinimixar.TabIndex = 11;
             this.LblMinimixar.Text = "-";
+            this.LblMinimixar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblMinimixar.Click += new System.EventHandler(this.LblMinimixar_Click);
             // 
             // LblCerrar
             // 
-            this.LblCerrar.AutoSize = true;
             this.LblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCerrar.ForeColor = System.Drawing.Color.White;
-            this.LblCerrar.Location = new System.Drawing.Point(779, 11);
+            this.LblCerrar.Location = new System.Drawing.Point(778, 8);
             this.LblCerrar.Name = "LblCerrar";
-            this.LblCerrar.Size = new System.Drawing.Size(20, 20);
+            this.LblCerrar.Size = new System.Drawing.Size(25, 25);
             this.LblCerrar.TabIndex = 10;
             this.LblCerrar.Text = "X";
+            this.LblCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCerrar.Click += new System.EventHandler(this.LblCerrar_Click);
             // 
             // tabControl1
@@ -182,8 +183,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.TxtTelefono);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.TxtTelefono1);
             this.groupBox1.Controls.Add(this.TxtDireccion);
             this.groupBox1.Controls.Add(this.TxtDocumento);
             this.groupBox1.Controls.Add(this.TxtApellido);
@@ -201,6 +203,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox1
             // 
@@ -212,25 +215,27 @@
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
-            // TxtTelefono
+            // TxtTelefono1
             // 
-            this.TxtTelefono.Location = new System.Drawing.Point(24, 180);
-            this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.Size = new System.Drawing.Size(125, 21);
-            this.TxtTelefono.TabIndex = 2;
+            this.TxtTelefono1.Location = new System.Drawing.Point(24, 180);
+            this.TxtTelefono1.MaxLength = 13;
+            this.TxtTelefono1.Name = "TxtTelefono1";
+            this.TxtTelefono1.Size = new System.Drawing.Size(125, 21);
+            this.TxtTelefono1.TabIndex = 2;
+            this.TxtTelefono1.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
             // 
             // TxtDireccion
             // 
             this.TxtDireccion.Location = new System.Drawing.Point(199, 128);
             this.TxtDireccion.Name = "TxtDireccion";
-            this.TxtDireccion.Size = new System.Drawing.Size(177, 21);
+            this.TxtDireccion.Size = new System.Drawing.Size(150, 21);
             this.TxtDireccion.TabIndex = 4;
             // 
             // TxtDocumento
             // 
             this.TxtDocumento.Location = new System.Drawing.Point(199, 80);
             this.TxtDocumento.Name = "TxtDocumento";
-            this.TxtDocumento.Size = new System.Drawing.Size(151, 21);
+            this.TxtDocumento.Size = new System.Drawing.Size(121, 21);
             this.TxtDocumento.TabIndex = 3;
             this.TxtDocumento.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -238,14 +243,14 @@
             // 
             this.TxtApellido.Location = new System.Drawing.Point(24, 128);
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(111, 21);
+            this.TxtApellido.Size = new System.Drawing.Size(121, 21);
             this.TxtApellido.TabIndex = 1;
             // 
             // TxtNombre
             // 
             this.TxtNombre.Location = new System.Drawing.Point(24, 80);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(100, 21);
+            this.TxtNombre.Size = new System.Drawing.Size(121, 21);
             this.TxtNombre.TabIndex = 0;
             this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
@@ -258,7 +263,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 16);
             this.label6.TabIndex = 29;
-            this.label6.Text = "Telefono";
+            this.label6.Text = "Teléfono";
             // 
             // label5
             // 
@@ -269,7 +274,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 16);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Direccion";
+            this.label5.Text = "Dirección";
             // 
             // label4
             // 
@@ -280,7 +285,8 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 16);
             this.label4.TabIndex = 27;
-            this.label4.Text = "Cedula";
+            this.label4.Text = "Cédula";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -353,9 +359,9 @@
             // 
             this.groupBox3.Controls.Add(this.rbDocumento);
             this.groupBox3.Controls.Add(this.rbNombre);
-            this.groupBox3.Location = new System.Drawing.Point(6, 27);
+            this.groupBox3.Location = new System.Drawing.Point(6, 37);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 59);
+            this.groupBox3.Size = new System.Drawing.Size(200, 50);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "&Filtro";
@@ -363,7 +369,7 @@
             // rbDocumento
             // 
             this.rbDocumento.AutoSize = true;
-            this.rbDocumento.Location = new System.Drawing.Point(103, 19);
+            this.rbDocumento.Location = new System.Drawing.Point(105, 21);
             this.rbDocumento.Name = "rbDocumento";
             this.rbDocumento.Size = new System.Drawing.Size(80, 17);
             this.rbDocumento.TabIndex = 3;
@@ -375,7 +381,7 @@
             // 
             this.rbNombre.AutoSize = true;
             this.rbNombre.Checked = true;
-            this.rbNombre.Location = new System.Drawing.Point(6, 19);
+            this.rbNombre.Location = new System.Drawing.Point(8, 21);
             this.rbNombre.Name = "rbNombre";
             this.rbNombre.Size = new System.Drawing.Size(62, 17);
             this.rbNombre.TabIndex = 2;
@@ -385,6 +391,7 @@
             // 
             // dgvClientes
             // 
+            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Location = new System.Drawing.Point(12, 122);
             this.dgvClientes.Name = "dgvClientes";
@@ -396,6 +403,15 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // TxtTelefono
+            // 
+            this.TxtTelefono.Location = new System.Drawing.Point(24, 208);
+            this.TxtTelefono.Mask = "(999)999-9999";
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(125, 21);
+            this.TxtTelefono.TabIndex = 37;
+            this.TxtTelefono.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
             // 
             // FrmClientes
             // 
@@ -450,7 +466,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtTelefono;
+        private System.Windows.Forms.TextBox TxtTelefono1;
         private System.Windows.Forms.TextBox TxtDireccion;
         private System.Windows.Forms.TextBox TxtDocumento;
         private System.Windows.Forms.TextBox TxtApellido;
@@ -464,6 +480,6 @@
         private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button BtnBuscar;
-
+        private System.Windows.Forms.MaskedTextBox TxtTelefono;
     }
 }

@@ -130,28 +130,28 @@
             // 
             // LblMinimixar
             // 
-            this.LblMinimixar.AutoSize = true;
             this.LblMinimixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblMinimixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinimixar.ForeColor = System.Drawing.Color.White;
-            this.LblMinimixar.Location = new System.Drawing.Point(595, 6);
+            this.LblMinimixar.Location = new System.Drawing.Point(585, 6);
             this.LblMinimixar.Name = "LblMinimixar";
-            this.LblMinimixar.Size = new System.Drawing.Size(19, 25);
+            this.LblMinimixar.Size = new System.Drawing.Size(25, 25);
             this.LblMinimixar.TabIndex = 13;
             this.LblMinimixar.Text = "-";
+            this.LblMinimixar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblMinimixar.Click += new System.EventHandler(this.LblMinimixar_Click);
             // 
             // LblCerrar
             // 
-            this.LblCerrar.AutoSize = true;
             this.LblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCerrar.ForeColor = System.Drawing.Color.White;
-            this.LblCerrar.Location = new System.Drawing.Point(616, 9);
+            this.LblCerrar.Location = new System.Drawing.Point(614, 6);
             this.LblCerrar.Name = "LblCerrar";
-            this.LblCerrar.Size = new System.Drawing.Size(20, 20);
+            this.LblCerrar.Size = new System.Drawing.Size(25, 25);
             this.LblCerrar.TabIndex = 12;
             this.LblCerrar.Text = "X";
+            this.LblCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCerrar.Click += new System.EventHandler(this.LblCerrar_Click);
             // 
             // tabControl1
@@ -209,9 +209,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Facturacion.Properties.Resources.download1;
-            this.pictureBox1.Location = new System.Drawing.Point(297, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(352, 20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 179);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 179);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
@@ -220,14 +220,14 @@
             // 
             this.TxtClave.Location = new System.Drawing.Point(42, 108);
             this.TxtClave.Name = "TxtClave";
-            this.TxtClave.Size = new System.Drawing.Size(111, 21);
+            this.TxtClave.Size = new System.Drawing.Size(121, 21);
             this.TxtClave.TabIndex = 1;
             // 
             // TxtUsuario
             // 
             this.TxtUsuario.Location = new System.Drawing.Point(42, 60);
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(100, 21);
+            this.TxtUsuario.Size = new System.Drawing.Size(121, 21);
             this.TxtUsuario.TabIndex = 0;
             // 
             // label4
@@ -324,9 +324,9 @@
             this.rbID_Usuario.AutoSize = true;
             this.rbID_Usuario.Location = new System.Drawing.Point(103, 19);
             this.rbID_Usuario.Name = "rbID_Usuario";
-            this.rbID_Usuario.Size = new System.Drawing.Size(78, 17);
+            this.rbID_Usuario.Size = new System.Drawing.Size(75, 17);
             this.rbID_Usuario.TabIndex = 3;
-            this.rbID_Usuario.Text = "ID_Usuario";
+            this.rbID_Usuario.Text = "ID Usuario";
             this.rbID_Usuario.UseVisualStyleBackColor = true;
             // 
             // rbUsuario
@@ -343,11 +343,12 @@
             // 
             // dgvUsuario
             // 
+            this.dgvUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Location = new System.Drawing.Point(8, 108);
+            this.dgvUsuario.Location = new System.Drawing.Point(7, 108);
             this.dgvUsuario.Name = "dgvUsuario";
             this.dgvUsuario.RowHeadersVisible = false;
-            this.dgvUsuario.Size = new System.Drawing.Size(614, 132);
+            this.dgvUsuario.Size = new System.Drawing.Size(620, 132);
             this.dgvUsuario.TabIndex = 3;
             this.dgvUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellClick);
             this.dgvUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);

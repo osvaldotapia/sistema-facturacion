@@ -80,6 +80,7 @@
             // 
             // CbxUsuario
             // 
+            this.CbxUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CbxUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxUsuario.FormattingEnabled = true;
             this.CbxUsuario.Location = new System.Drawing.Point(75, 34);
@@ -112,28 +113,28 @@
             // 
             // LblCerrar
             // 
-            this.LblCerrar.AutoSize = true;
             this.LblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCerrar.ForeColor = System.Drawing.Color.White;
-            this.LblCerrar.Location = new System.Drawing.Point(443, 7);
+            this.LblCerrar.Location = new System.Drawing.Point(442, 8);
             this.LblCerrar.Name = "LblCerrar";
-            this.LblCerrar.Size = new System.Drawing.Size(20, 20);
+            this.LblCerrar.Size = new System.Drawing.Size(25, 25);
             this.LblCerrar.TabIndex = 8;
             this.LblCerrar.Text = "X";
+            this.LblCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCerrar.Click += new System.EventHandler(this.label1_Click);
             // 
             // LblMinimixar
             // 
-            this.LblMinimixar.AutoSize = true;
             this.LblMinimixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblMinimixar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinimixar.ForeColor = System.Drawing.Color.White;
-            this.LblMinimixar.Location = new System.Drawing.Point(422, 4);
+            this.LblMinimixar.Location = new System.Drawing.Point(408, 7);
             this.LblMinimixar.Name = "LblMinimixar";
-            this.LblMinimixar.Size = new System.Drawing.Size(19, 25);
+            this.LblMinimixar.Size = new System.Drawing.Size(25, 25);
             this.LblMinimixar.TabIndex = 9;
             this.LblMinimixar.Text = "-";
+            this.LblMinimixar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblMinimixar.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox2
@@ -218,7 +219,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

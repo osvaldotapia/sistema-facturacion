@@ -117,7 +117,7 @@
             this.RdID_Producto.Size = new System.Drawing.Size(58, 17);
             this.RdID_Producto.TabIndex = 3;
             this.RdID_Producto.TabStop = true;
-            this.RdID_Producto.Text = "Codigo";
+            this.RdID_Producto.Text = "Código";
             this.RdID_Producto.UseVisualStyleBackColor = true;
             // 
             // RdDesc
@@ -126,10 +126,10 @@
             this.RdDesc.Checked = true;
             this.RdDesc.Location = new System.Drawing.Point(6, 19);
             this.RdDesc.Name = "RdDesc";
-            this.RdDesc.Size = new System.Drawing.Size(75, 17);
+            this.RdDesc.Size = new System.Drawing.Size(81, 17);
             this.RdDesc.TabIndex = 2;
             this.RdDesc.TabStop = true;
-            this.RdDesc.Text = "Desripcion";
+            this.RdDesc.Text = "Descripción";
             this.RdDesc.UseVisualStyleBackColor = true;
             // 
             // dgvProductos
