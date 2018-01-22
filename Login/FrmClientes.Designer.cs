@@ -42,7 +42,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.TxtTelefono1 = new System.Windows.Forms.TextBox();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.TxtDireccion = new System.Windows.Forms.TextBox();
             this.TxtDocumento = new System.Windows.Forms.TextBox();
             this.TxtApellido = new System.Windows.Forms.TextBox();
@@ -61,7 +61,6 @@
             this.rbNombre = new System.Windows.Forms.RadioButton();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.TxtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -183,9 +182,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.TxtTelefono);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.TxtTelefono1);
+            this.groupBox1.Controls.Add(this.TxtTelefono);
             this.groupBox1.Controls.Add(this.TxtDireccion);
             this.groupBox1.Controls.Add(this.TxtDocumento);
             this.groupBox1.Controls.Add(this.TxtApellido);
@@ -215,14 +213,14 @@
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
-            // TxtTelefono1
+            // TxtTelefono
             // 
-            this.TxtTelefono1.Location = new System.Drawing.Point(24, 180);
-            this.TxtTelefono1.MaxLength = 13;
-            this.TxtTelefono1.Name = "TxtTelefono1";
-            this.TxtTelefono1.Size = new System.Drawing.Size(125, 21);
-            this.TxtTelefono1.TabIndex = 2;
-            this.TxtTelefono1.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
+            this.TxtTelefono.Location = new System.Drawing.Point(24, 180);
+            this.TxtTelefono.MaxLength = 13;
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(125, 21);
+            this.TxtTelefono.TabIndex = 2;
+            this.TxtTelefono.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
             // 
             // TxtDireccion
             // 
@@ -404,15 +402,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // TxtTelefono
-            // 
-            this.TxtTelefono.Location = new System.Drawing.Point(24, 208);
-            this.TxtTelefono.Mask = "(999)999-9999";
-            this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.Size = new System.Drawing.Size(125, 21);
-            this.TxtTelefono.TabIndex = 37;
-            this.TxtTelefono.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
-            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,7 +455,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtTelefono1;
+        private System.Windows.Forms.TextBox TxtTelefono;
         private System.Windows.Forms.TextBox TxtDireccion;
         private System.Windows.Forms.TextBox TxtDocumento;
         private System.Windows.Forms.TextBox TxtApellido;
@@ -480,6 +469,5 @@
         private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.MaskedTextBox TxtTelefono;
     }
 }

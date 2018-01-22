@@ -275,14 +275,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facturacion.exe" size="3893760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facturacion.exe" size="3893248">
       <assemblyIdentity name="Facturacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7q3DK/k5Xw8GUT3OEjZ32QCzGfuMEgwls3aEdkLfZgE=</dsig:DigestValue>
+        <dsig:DigestValue>LATlXBk8xVLF0++MfDO8H4cICf1XSoQI21jIILRAzaQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
